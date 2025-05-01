@@ -1,0 +1,8 @@
+#balloon {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%; /* ใช้เพื่อตัดขอบเป็นวงกลม ต่ำกว่า 50% วงจะเล็กลง มากกว่า 50% จะเห็นขอบ */
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
