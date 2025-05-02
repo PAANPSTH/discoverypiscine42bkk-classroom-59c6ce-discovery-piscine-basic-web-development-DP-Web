@@ -10,59 +10,66 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience & Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="aboutme">
-            <h2>About Me</h2>
-            <img src="profile.jpg" alt="Your Profile Picture">
-            <p>Your Name</p>
-            <p>Your Job Title</p>
-            <p>A brief summary about yourself.</p>
+        <section id="about">
+            <div class="container">
+                <div class="profile">
+                    <img src="panda.PNG" alt="profile picture">
+                    <h1>ARTHITTAYA CHALUSRI</h1>
+                    <h2>Web Discovery Pisciner</h2>
+                </div>
+                <p>A girl who does nothing, but except makes her friend laugh.</p>
+            </div>
         </section>
 
         <section id="experience">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Job Title 1</h3>
-                <p class="company">Company Name | Start Date - End Date</p>
-                <ul>
-                    <li>Responsibility 1</li>
-                    <li>Responsibility 2</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Job Title 2</h3>
-                <p class="company">Company Name | Start Date - End Date</p>
-                <ul>
-                    <li>Responsibility 1</li>
-                    <li>Responsibility 2</li>
-                </ul>
-            </div>
-        </section>
+            <div class="container">
+                <h2>Education</h2>
+                <div class="experience-item">
+                    <h3>Studying at</h3>
+                    <p class="company">KMITL | 2022 - present</p>
+                    <ul>
+                        <li>Faculty of Engineering</li>
+                        <li>Industrial Engineering and Logistics Management</li>
+                        <li>Watch overview Marketing</li>
+                    </ul>
+                </div>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-            </ul>
+                <h2>Personalities</h2>
+                <ul class="skills-list">
+                    <li>Strong like a man.</li>
+                    <li>Friendly !? (maybe?).</li>
+                    <li>Always hungry !!.</li>
+                </ul>
+            </div>
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: your@email.com</p>
-            <p>LinkedIn: linkedin.com/in/yourprofile</p>
-            <p>GitHub: github.com/yourgithub</p>
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Don't hesitate to reach me via <a href="mailto:66010961@kmitl.ac.th">mail</a>.</p>
+                <p>Or you also contact <a href="resumep.html"> this one</a> too.</p>
+            </div>
         </section>
     </main>
 
+    <script>
+        // Just copy code from GG
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
